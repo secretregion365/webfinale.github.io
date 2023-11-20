@@ -1,0 +1,257 @@
+body {
+    font-family: 'Faith Hope', sans-serif;
+}
+
+p, h1, h2, h3 {
+    color: rgb(27, 46, 39);
+    letter-spacing: 2px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(27, 46, 39);
+    font-family: 'Faith Hope', sans-serif;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 720px) {
+    .navbar a:not(:first-child) {
+      display: none;
+    }
+
+    a.icon {
+      float: right;
+      display: block;
+    }
+
+    .navbar.responsive {
+      position: relative;
+    }
+
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  .navbar-items {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'Faith Hope', sans-serif;
+  }
+
+  .navbar a:hover {
+    background-color: rgb(106, 156, 131);
+  }
+
+  .boldlink {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Faith Hope', sans-serif;
+  }
+
+  .highlight-link {
+    color: rgb(64, 101, 82) !important;
+  }
+.container { overflow: hidden; }
+.container img {
+    max-width: 100%; 
+    height: auto;     
+    display: block;   
+  }
+
+
+.highlight-link {
+    color: rgb(64, 101, 82) !important;
+}
+
+.footer {
+    background-color: rgb(27, 46, 39);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Faith Hope', sans-serif;
+    letter-spacing: 2px;
+}
+
+.f {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar a,
+    .dropdown .dropbtn,
+    a[href="quiz.html"] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dropdown-content {
+        position: relative;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 33px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+a.my-custom-button {
+    font-size: 1rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #007bff;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 0.25rem;}
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px;
+    }
+}
+
+hr{
+    border-width: 2px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.input-text {
+    margin-left: 5px;
+}
+
+.icon {
+    font-size: 18px;
+    color: white !important;
+    margin-right: 5px;
+}
