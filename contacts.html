@@ -8,26 +8,26 @@
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     <link rel="stylesheet" href="style.css">
+    <title>ABOUT</title>
   </head>
 <body style="background-color:white;">
 
     <div class="navbar" id="myNavbar">
-        <a href="index.html" class="boldlink">EcoHarbor</a>
+        <a href="index.html" class="highlight-link">EcoHarbor</a>
         <a href="page1.html" class="highlight-link">OVERPOPULATION</a>
         <a href="page2.html" class="highlight-link">DEFORESTATION</a>
         <a href="page3.html" class="highlight-link">POLLUTION</a>
         <a href="quiz.html" class="highlight-link">Quiz</a>
-        <a href="contacts.html" class="highlight-link">Contacts</a>
+        <a href="contacts.html" class="boldlink">Contacts</a>
         <div class="search-bar" ><i class="fas fa-search" style="color: white;"></i>
        <input class="input-text" type="text" name="search-bar" placeholder="Search">
   </div>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars" style="color: rgb(27, 46, 39);"></i>
-      </a>
+      </a><br>
       <div class="container">
-      <h2 style = "text-align: center;">Contact Us</h2>
-        <h3 style = "text-align: center;">About the Impact of Humankind on the World</h3>
+      <h2 style = "text-align: center;" id="animated-text">Contact Us<br>About the Impact of Humankind on the World</h2>
         <p style = "text-align: center;">Join us in our mission to create a more sustainable and harmonious world. Your input and ideas are essential, and
             we look forward to building a brighter future together. Let's Make a Difference Together!</p>
     </div></div>
@@ -35,7 +35,7 @@
     <div class="container">
       <section id="contact-info">
         <h3>How to Reach Us:</h3>
-        <p><strong>Email:</strong> <a href="moltenf1987@gmail.com">moltenf1987@gmail.com</a></p>
+        <p><strong>Email:</strong> <a id="myElement" href="moltenf1987@gmail.com">moltenf1987@gmail.com</a></p>
         <p><strong>Phone:</strong> <span>8 (747) 039 65 11</span></p>
         <p>If you have thoughts on sustainability, want to collaborate on projects, or are curious about the positive
           changes we can make, we are here to connect with like-minded individuals.</p>
@@ -46,11 +46,11 @@
       <section id="references">
         <h3>References</h3>
         <ul>
-          <li><a href="https://www.un.org/" target="_blank" rel="noopener noreferrer">United Nations</a></li>
-          <li><a href="https://www.who.int/" target="_blank" rel="noopener noreferrer">World Health Organization (WHO)</a></li>
-          <li><a href="https://www.worldbank.org/" target="_blank" rel="noopener noreferrer">World Bank</a></li>
-          <li><a href="https://www.worldwildlife.org/" target="_blank" rel="noopener noreferrer">World Wildlife Fund (WWF)</a></li>
-          <li><a href="https://www.ipcc.ch/" target="_blank" rel="noopener noreferrer">International Panel on Climate Change (IPCC)</a></li>
+          <li><a id="myElement2" href="https://www.un.org/" target="_blank" rel="noopener noreferrer">United Nations</a></li>
+          <li><a id="myElement3" href="https://www.who.int/" target="_blank" rel="noopener noreferrer">World Health Organization (WHO)</a></li>
+          <li><a id="myElement4" href="https://www.worldbank.org/" target="_blank" rel="noopener noreferrer">World Bank</a></li>
+          <li><a id="myElement5" href="https://www.worldwildlife.org/" target="_blank" rel="noopener noreferrer">World Wildlife Fund (WWF)</a></li>
+          <li><a id="myElement6" href="https://www.ipcc.ch/" target="_blank" rel="noopener noreferrer">International Panel on Climate Change (IPCC)</a></li>
         </ul>
       </section>
     </div>
@@ -95,8 +95,7 @@
       <div class="col-md-3">
         <section id="visit-us">
           <h3 style="color: white;">Visit Us:</h3>
-          <p style="color: white;">EcoHarbor Headquarters<br> 123 Green Street<br> Sustainability City, Earth</p>
-        </section>
+          <p style="color: white;">Astana city<br>st. Republic, 19</p>        </section>
       </div>
       <div class="col-md-3">
         <section id="connect-with-us">
@@ -114,7 +113,54 @@
       <p class = "f">&copy; 2023 EcoHarbor. All rights reserved.<br>Made by: Aruza Bekturganova<br>Group: MT-2205</p>
   
   </div>
-  <script>function myFunction() {
+  <script>
+    myElement.addEventListener('mouseover', function() {
+            myElement.style.backgroundColor = 'lightgreen';
+        });
+        myElement.addEventListener('mouseout', function() {
+            myElement.style.backgroundColor = 'white';
+        });
+        myElement2.addEventListener('mouseover', function() {
+            myElement2.style.backgroundColor = 'lightgreen';
+        });
+        myElement2.addEventListener('mouseout', function() {
+            myElement2.style.backgroundColor = 'white';
+        });
+        myElement3.addEventListener('mouseover', function() {
+            myElement3.style.backgroundColor = 'lightgreen';
+        });
+        myElement3.addEventListener('mouseout', function() {
+            myElement3.style.backgroundColor = 'white';
+        });
+        myElement4.addEventListener('mouseover', function() {
+            myElement4.style.backgroundColor = 'lightgreen';
+        });
+        myElement4.addEventListener('mouseout', function() {
+            myElement4.style.backgroundColor = 'white';
+        });
+        myElement5.addEventListener('mouseover', function() {
+            myElement5.style.backgroundColor = 'lightgreen';
+        });
+        myElement5.addEventListener('mouseout', function() {
+            myElement5.style.backgroundColor = 'white';
+        });
+        myElement6.addEventListener('mouseover', function() {
+            myElement6.style.backgroundColor = 'lightgreen';
+        });
+        myElement6.addEventListener('mouseout', function() {
+            myElement6.style.backgroundColor = 'white';
+        });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var animatedText = document.getElementById("animated-text");
+
+    function startAnimation() {
+      animatedText.classList.add("jumpy");
+    }
+
+    setTimeout(startAnimation, 1000);
+  });
+  function myFunction() {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
         x.className += " responsive";
