@@ -8,14 +8,15 @@
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     <link rel="stylesheet" href="style.css">
+    <title>POLLUTION</title>
   </head>
 <body style="background-color:white;">
 
     <div class="navbar" id="myNavbar">
-        <a href="index.html" class="boldlink">EcoHarbor</a>
+        <a href="index.html" class="highlight-link">EcoHarbor</a>
         <a href="page1.html" class="highlight-link">OVERPOPULATION</a>
         <a href="page2.html" class="highlight-link">DEFORESTATION</a>
-        <a href="page3.html" class="highlight-link">POLLUTION</a>
+        <a href="page3.html" class="boldlink">POLLUTION</a>
         <a href="quiz.html" class="highlight-link">Quiz</a>
         <a href="contacts.html" class="highlight-link">Contacts</a>
         <div class="search-bar" ><i class="fas fa-search" style="color: white;"></i>
@@ -26,12 +27,60 @@
         <i class="fa fa-bars" style="color: rgb(27, 46, 39);"></i>
       </a>
 
+      <br>
+<div class = "container"><h3 style = "text-align: center;">Pollution, in its various forms, has reached staggering levels globally.
+    <br>Air pollution, attributed largely to industrial emissions and vehicular exhaust, leads to approximately 7 million premature deaths each year <br>(World Health Organization, 2021).</h3>
+    <br><img src = "img/cough.jpg"><br>
+    <h3 style = "text-align: center;">Moreover, over 80% of the world's wastewater is released into the environment without proper treatment, contributing to water pollution and threatening aquatic ecosystems <br>(United Nations, 2017).
+</h3></div>
 
-<h1>Pollution, in its various forms, has reached staggering levels globally.
-    <br>Air pollution, attributed largely to industrial emissions and vehicular exhaust, leads to approximately 7 million premature deaths each year <br>(World Health Organization, 2021).</h1>
-    <div class = "container"><img src = "img/cough.jpg"></div>
-    <h1>Moreover, over 80% of the world's wastewater is released into the environment without proper treatment, contributing to water pollution and threatening aquatic ecosystems <br>(United Nations, 2017).
-</h1>
+<h1 style = "text-align: center;">how we can deal with it:</h1>
+
+<div class="accordion" id="accordionExample">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Sustainable Waste Management
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Implement sustainable waste management practices to reduce pollution. This includes recycling programs, proper disposal of hazardous waste, and encouraging the use of eco-friendly materials. Education and awareness campaigns can also play a role in promoting responsible waste disposal habits.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Air Quality Improvement
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Take measures to improve air quality by reducing emissions from industries and vehicles. This can involve the promotion of electric vehicles, implementation of stricter emission standards, and the use of alternative and renewable energy sources. Planting trees and creating green spaces also contribute to better air quality.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Water Pollution Prevention
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Implement strategies to prevent water pollution by controlling industrial discharges, promoting responsible agriculture practices, and improving wastewater treatment. Educate communities on the importance of clean water and encourage the responsible use of water resources to reduce pollution in rivers, lakes, and oceans.
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="d-flex justify-content-between mx-5">
+  <button type="button" class="btn btn-outline-success" onclick="prevPage()">Previous page</button>
+  <button type="button" class="btn btn-outline-success" onclick="nextPage()">take a quiz</button>
+</div><br>
+
 <div class="footer">
     <div class="row">
       <div class="col-md-3">
@@ -50,8 +99,7 @@
       <div class="col-md-3">
         <section id="visit-us">
           <h3 style="color: white;">Visit Us:</h3>
-          <p style="color: white;">EcoHarbor Headquarters<br> 123 Green Street<br> Sustainability City, Earth</p>
-        </section>
+          <p style="color: white;">Astana city<br>st. Republic, 19</p>        </section>
       </div>
       <div class="col-md-3">
         <section id="connect-with-us">
@@ -69,6 +117,9 @@
       <p class = "f">&copy; 2023 EcoHarbor. All rights reserved.<br>Made by: Aruza Bekturganova<br>Group: MT-2205</p>
   
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+  
   <script>function myFunction() {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
@@ -78,6 +129,13 @@
         x.className = "navbar";
         console.log("Responsive class removed");
     }
-}</script>
+}
+function nextPage() {
+    window.location.href = 'quiz.html';
+  }
+  function prevPage() {
+    window.location.href = 'page2.html';
+  }
+</script>
 </body>
 </html>
