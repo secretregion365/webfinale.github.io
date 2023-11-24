@@ -8,15 +8,17 @@
   <link rel="icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <title>QUIZ</title>
 </head>
 <body style="background-color:white;">
 
   <div class="navbar" id="myNavbar">
-    <a href="index.html" class="boldlink">EcoHarbor</a>
+    <a href="index.html" class="highlight-link">EcoHarbor</a>
     <a href="page1.html" class="highlight-link">OVERPOPULATION</a>
     <a href="page2.html" class="highlight-link">DEFORESTATION</a>
     <a href="page3.html" class="highlight-link">POLLUTION</a>
-    <a href="quiz.html" class="highlight-link">Quiz</a>
+    <a href="quiz.html" class="boldlink">Quiz</a>
     <a href="contacts.html" class="highlight-link">Contacts</a>
     <div class="search-bar" ><i class="fas fa-search" style="color: white;"></i>
    <input class="input-text" type="text" name="search-bar" placeholder="Search">
@@ -81,8 +83,17 @@
 
     <button type="button" class="btn btn-outline-success" onclick="submitQuiz()" style = "margin-left: 50%;">Submit</button><br><br>
 </form>
+<div class="d-flex justify-content-end mx-5">
+  <button type="button" class="btn btn-outline-success" onclick="nextPage()">Contacts</button>
+</div><br>
+
+<audio id="wowAudio">
+  <source src="wow.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 <script>
+
     function submitQuiz() {
         let score = 0;
 
@@ -96,9 +107,19 @@
         if (document.querySelector('input[name="q8"]:checked').value === "b") score++;
         if (document.querySelector('input[name="q9"]:checked').value === "b") score++;
         if (document.querySelector('input[name="q10"]:checked').value === "b") score++;
-
+        
         alert("Your score: " + score + "/10");
+        var wowAudio = document.getElementById("wowAudio");
+       wowAudio.play();
     }
+
+    function handleKeyPress(event) {
+        if (event.keyCode === 13) {
+            submitQuiz();
+        }
+    }
+
+    $(document).keypress(handleKeyPress);
 </script>
 <div class="footer">
   <div class="row">
@@ -118,8 +139,7 @@
     <div class="col-md-3">
       <section id="visit-us">
         <h3 style="color: white;">Visit Us:</h3>
-        <p style="color: white;">EcoHarbor Headquarters<br> 123 Green Street<br> Sustainability City, Earth</p>
-      </section>
+        <p style="color: white;">Astana city<br>st. Republic, 19</p>      </section>
     </div>
     <div class="col-md-3">
       <section id="connect-with-us">
@@ -147,6 +167,12 @@
         x.className = "navbar";
         console.log("Responsive class removed");
     }
-}</script>
+}
+
+function nextPage() {
+    window.location.href = 'contacts.html';
+  }
+  
+  </script>
 </body>
 </html>
